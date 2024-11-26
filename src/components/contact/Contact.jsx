@@ -18,7 +18,7 @@ const ContactForm = ({ setLoading }) => {
     e.preventDefault();
     let { name, email, phone, message } = form;
     setLoading(true);
-    let response = await fetch("https://portfolio-backend-lgll.onrender.com/contactUs", {
+    let response = await fetch("http://localhost:3000/contactUs", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
